@@ -5,7 +5,8 @@ import "./Weather.css";
 let city = "London";
 export default function Weather(props) {
   const [ready, setReady] = useState(false);
-  const [weatherData, setWeatherData] = useState({ ready: false });
+  const [weatherData, setWeatherData] = useState({});
+  const apiKey = "88c09f696266983e1aafe60fe4c4f352";
 
   function handleResponse(response) {
     setWeatherData({
@@ -69,9 +70,9 @@ export default function Weather(props) {
     );
   } else {
     city = "London";
-    const apiKey = "bae5c2a82b5d2bbadb52bfe79c8388f8";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
+    console.log("will call ", apiUrl);
     return "Loading";
   }
 }
