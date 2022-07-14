@@ -9,6 +9,28 @@ function App() {
       <div className="container">
         <Weather defaultCity="London" />
       </div>
+      <footer>
+        This project was coded by{" "}
+        <a
+          href="https://www.facebook.com/dariakutluieva/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Daria Kutluieva
+        </a>{" "}
+        and is{" "}
+        <a
+          href="https://github.com/daryakut/react-weather-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          open-sourced on GitHub
+        </a>{" "}
+        and{" "}
+        <a href="/" target="_blank" rel="noopener noreferrer">
+          hosted on Netlify
+        </a>
+      </footer>
     </div>
   );
 }
