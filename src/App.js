@@ -27,7 +27,11 @@ function App() {
           open-sourced on GitHub
         </a>{" "}
         and{" "}
-        <a href="/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://moonlit-souffle-2cfa9b.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           hosted on Netlify
         </a>
       </footer>
