@@ -1,9 +1,11 @@
 .App {
   max-width: 600px;
   margin: 30px auto;
+  /* background-image: url("./image.jpg"); */
+  /* background-image: url("/background.jpg"); */
 }
 
 .App footer {
   font-size: 11px;
-  margin: 10px 0;
+  margin: 20px 50px;
 }
